@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logicalreasoning</title>
+
+</head>
+<body>
+    <div class="navbar">
+        <a routerLink="/homepage">Dashboard</a>
+        <!-- <a routerLink="/profile">Profile</a> -->
+        <div class="dropdown">
+          <button class="dropbtn">Courses 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a routerLink='/programLang'>Programming</a>
+      <a routerLink="/interview">Interview preparation</a>
+      <a routerLink="/mcq">Aptitude</a>
+          </div>
+        </div> 
+        <div class='logout'>
+        <a routerLink="/login">Logout</a>
+      </div>
+        
+      </div>
+    <div class="wrappper">
+        <h1>Logicalreasoning</h1>
+        <button routerLink="/mcq1" class="btn btn-info btn-lg" style="float:left">Prev</button>
+        <button routerLink="/LR1" class="btn btn-info btn-lg" style="float:right">Next</button>
+        <ul class="tab-wrap">
+            <li>
+                <input type="radio" id="tab-1" name="tab" checked>
+                <label for="tab-1">Question-1</label>
+                <div class="tab-content">
+                    <h2>Question-1</h2>
+                    <p>He brought him _____ with great difficulty.
+                    </p>
+                    <p><b>1.</b>about</p>
+                    <p><b>2.</b>in</p>
+                    <p><b>3.</b>up</p>
+                    <p><b>4.</b>over</p>
+                    <button class="btn btn-info btn-lg" onclick="getElementById('demo14').innerHTML='Option 3'">View Answer</button>
+                    <p id="demo14"></p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="tab-2" name="tab">
+                <label for="tab-2">Question-2</label>
+                <div class="tab-content">
+                    <h2>Question-2</h2>
+                    <p>VITUPERATE
+                    </p>
+                    <p><b>1.</b>abuse</p>
+                    <p><b>2.</b>rebuke</p>
+                    <p><b>3.</b>praise</p>
+                    <p><b>4.</b>retort</p>
+                    <button class="btn btn-info btn-lg" onclick="getElementById('demo13').innerHTML='Option 3'">View Answer</button>
+                    <p id="demo13"></p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="tab-3" name="tab">
+                <label for="tab-3">Question-3</label>
+                <div class="tab-content">
+                    <h2>Question-3</h2>
+                    <p>The young, thin boy surprised his wrestling opponent with his ______
+                        strength.
+                    </p>
+                        <p><b>1.</b>fraudulent</p>
+                        <p><b>2.</b>wiry</p>
+                        <p><b>3.</b>frolicsome</p>
+                        <p><b>4.</b>pretentious</p>
+                        <button class="btn btn-info btn-lg" onclick="getElementById('demo11').innerHTML='Option 2'">View Answer</button>
+                    <p id="demo11"></p>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" id="tab-4" name="tab">
+                <label for="tab-4">Question-4</label>
+                <div class="tab-content">
+                    <h2>Question-4</h2>
+                    <p>An extremely deep crack or opening in the ground
+                    </p>
+                        <p><b>1.</b>Chasm</p>
+                        <p><b>2.</b>Aperture</p>
+                        <p><b>3.</b>Ditch</p>
+                        <p><b>4.</b>pit</p>
+                        <button class="btn btn-info btn-lg" onclick="getElementById('demo10').innerHTML='Option 1'">View Answer</button>
+                    <p id="demo10"></p>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" id="tab-5" name="tab">
+                <label for="tab-5">Question-5</label>
+                <div class="tab-content">
+                    <h2>Question-5</h2>
+                    <p>Modern
+                    </p>
+                        <p><b>1.</b>ity</p>
+                        <p><b>2.</b>ty</p>
+                        <p><b>3.</b>ize</p>
+                        <p><b>4.</b>ite</p>
+                        <button class="btn btn-info btn-lg" onclick="getElementById('demo9').innerHTML='Option 1'">View Answer</button>
+                    <p id="demo9"></p>
+                </div>
+
+            </li>
+
+
+        </ul>
+    </div>
+    </body>
+    </html>
