@@ -1,0 +1,59 @@
+<div class="navbar">
+    <a routerLink="/homepage">Dashboard</a>
+    <div class="dropdown">
+      <button class="dropbtn">Courses 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a routerLink='/programLang'>Programming</a>
+      <a routerLink="/interview">Interview preparation</a>
+      <a routerLink="/mcq">Aptitude</a>
+      </div>
+    </div> 
+    <div class="logout">
+      <a routerLink="/login">Logout</a>
+    </div>
+  </div>
+
+  <h1>&nbsp;<b><u>Learn CPP</u></b></h1>
+  <p>&emsp;C++ is an intermediate level language, as it comprises a confirmation of both high level and low level<br>&nbsp;language features.</p>
+  <p>&emsp;C++ is a statically typed, free form, multiparadigm, compiled general-purpose language.</p>
+  <p>&emsp;It has imperative, object-oriented and generic programming features and it runs on lots of platform like<br>&nbsp; Windows, Linux, Unix, Mac etc.</p>
+
+  <img  class="image4" src="\assets\images\cpppic.jpg" style = "width:300px"/>
+  <!--<ol>
+    <h2><li><a routerLink = "/homepage">Introduction</a></li></h2>
+    <h2><li><a routerLink = "/homepage">Conditional Statements, Loops & Functions</a></li></h2>
+    <h2><li><a routerLink = "/homepage">More Topics</a></li></h2>
+</ol>-->
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-card-2 w3-margin" style="max-width:400px;">
+  <header class="w3-container w3-light-blue w3-padding-16">
+    <h3><b>Get Started</b></h3>
+  </header>
+  <ul class="w3-ul">
+    <a routerLink= "/cppintro"><li class="w3-light-grey w3-padding-16"><b>Introduction</b><span style="cursor:pointer;" class="w3-right w3-margin-right"></span></li></a>
+    <a routerLink = "/cpp_func"><li class="w3-padding-16"><b>Conditional Statements,Loops & Functions</b><span style="cursor:pointer;" class="w3-right w3-margin-right"></span></li></a>
+    <a routerLink = "/cpp_more"><li class="w3-light-grey w3-padding-16"><b>More Topics</b><span style="cursor:pointer;" class="w3-right w3-margin-right"></span></li></a>
+    <!-- <a routerLink = "/homepage"><li class="w3-padding-16"><b>Mock Interview</b><span style="cursor:pointer;" class="w3-right w3-margin-right"></span></li></a> -->
+  </ul>
+</div>
+<br>
+<form #cppForm="ngForm" (ngSubmit)="cppAddComment(cppForm.value)">
+  &nbsp;&nbsp;<label><b>Comments:</b></label><br>
+  <!-- <input type="text" ngModel name="comment" #comment=ngModel placeholder="Add your Comment here" class="form-control"> -->
+  &nbsp;&nbsp;<textarea ngModel name="comment" #comment=ngModel placeholder="Add your Comment here" class="form-control" required minlength="10"></textarea><br>
+  &nbsp;&nbsp;&nbsp;<button type="submit" class="btn" >Add</button><br>
+</form>
+<br>
+&nbsp;&nbsp;<button (click)="cppShowComments()" class="btn">Show Comments</button>
+<br><br>
+<div *ngFor="let com of allCpp_comments">
+  &nbsp;&nbsp;<b>{{com.email}}</b>
+  &nbsp;&nbsp;<div class="container">
+    &nbsp;&nbsp; {{com.comment}} 
+  </div>
+</div>
