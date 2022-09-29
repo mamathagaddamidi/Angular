@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="navbar">
+        <a routerLink="/homepage">Dashboard</a>
+        <!-- <a routerLink="/profile">Profile</a> -->
+        <div class="dropdown">
+          <button class="dropbtn">Courses 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a routerLink='/programLang'>Programming</a>
+      <a routerLink="/interview">Interview preparation</a>
+      <a routerLink="/mcq">Aptitude</a>
+          </div>
+        </div> 
+        <div class='logout'>
+        <a routerLink="/login">Logout</a>
+      </div>
+        
+      </div>
+    <div class="wrappper">
+        <h1>Logicalreasoning</h1>
+        <button routerLink="/Logicalreasoning" class="btn btn-info btn-lg" style="float:left">Prev</button>
+        <button routerLink="/LR2" class="btn btn-info btn-lg" style="float:right">Next</button>
+        <ul class="tab-wrap">
+            <li>
+                <input type="radio" id="tab-6" name="tab" checked>
+                <label for="tab-6">Question-6</label>
+                <div class="tab-content">
+                    <h2>Question-6</h2>
+                    <p>Likelihood
+                    </p>
+                    <p><b>1.</b>liken</p>
+                    <p><b>2.</b>likely</p>
+                    <p><b>3.</b>like</p>
+                    <p><b>4.</b>likeable</p>
+                    <button class="btn btn-info btn-lg" onclick="getElementById('demo8').innerHTML='Option 3'">View Answer</button>
+                    <p id="demo8"></p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="tab-7" name="tab">
+                <label for="tab-7">Question-7</label>
+                <div class="tab-content">
+                    <h2>Question-7</h2>
+                    <p>The train had left.
+                    </p>
+                    <p><b>1.</b>past perfect</p>
+                    <p><b>2.</b>past continuous</p>
+                    <p><b>3.</b>past future</p>
+                    <p><b>4.</b>simple present</p>
+                    <button class="btn btn-info btn-lg" onclick="getElementById('demo7').innerHTML='Option 1'">View Answer</button>
+                    <p id="demo7"></p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="tab-8" name="tab">
+                <label for="tab-8">Question-8</label>
+                <div class="tab-content">
+                    <h2>Question-8</h2>
+                    <p>You will have finished this work by tomorrow.
+                    </p>
+                        <p><b>1.</b>This work will be finished by tomorrow.</p>
+                        <p><b>2.</b>This work will finished tomorrow.</p>
+                        <p><b>3.</b>This work will have been finished by tomorrow.</p>
+                        <p><b>4.</b>This work will have been finished tomorrow.</p>
+                        <button class="btn btn-info btn-lg" onclick="getElementById('demo6').innerHTML='Option 3'">View Answer</button>
+                    <p id="demo6"></p>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" id="tab-9" name="tab">
+                <label for="tab-9">Question-9</label>
+                <div class="tab-content">
+                    <h2>Question-9</h2>
+                    <p>He may be innocent. I do not know.
+                    </p>
+                        <p><b>a.</b>I doubt -----------</p>
+                        <p><b>b.</b>I do not -----------</p>
+                        <p><b>c.</b>That he is -----------</p>
+                        <p><b>A.</b>Only A</p>
+                        <p><b>B.</b>Only B</p>
+                        <p><b>C.</b>Only C</p>
+                        <p><b>D.</b>A&B</p>
+                        <button class="btn btn-info btn-lg" onclick="getElementById('demo5').innerHTML='Option B'">View Answer</button>
+                    <p id="demo5"></p>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" id="tab-10" name="tab">
+                <label for="tab-10">Question-10</label>
+                <div class="tab-content">
+                    <h2>Question-5</h2>
+                    <p>According to pirate lore, a terrible ______ would follow whoever opened the treasure chest.
+                    </p>
+                        <p><b>1.</b>precursor</p>
+                        <p><b>2.</b>precession</p>
+                        <p><b>3.</b>rendition</p>
+                        <p><b>4.</b>insurgence</p>
+                        <p><b>5.</b>malediction</p>
+                        <button class="btn btn-info btn-lg" onclick="getElementById('demo4').innerHTML='Option 5'">View Answer</button>
+                    <p id="demo4"></p>
+                        
+                        
+                </div>
+
+            </li>
+
+
+        </ul>
+    </div>
+    </body>
+    </html>
