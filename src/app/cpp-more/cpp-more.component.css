@@ -1,0 +1,168 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow:hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(0, 140, 255);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .logout{
+    float:right;
+    background-color: rgb(170, 12, 12);
+  }
+  body , html {
+    height : 100%;
+  }
+  .class {
+      position:relative;
+      /* top : 362px;
+      left: 50px; */
+      height:100px;
+
+  }
+  .object {
+    position:relative;
+    /* top : 600px;
+    left: 50px; */
+    height:250px;
+    width:350px;
+
+}
+.methods {
+  position:relative;
+  /* top : 1015px;
+  left: 50px; */
+  height:250px;
+  width:350px;
+
+}
+.constructor {
+  position:relative;
+  /* top : 1470px;
+  left: 50px; */
+  height:200px;
+  width:420px;
+
+}
+.encap {
+  position:relative;
+  /* top : 2230px;
+  left: 50px; */
+  height:260px;
+  width:300px;
+
+}
+.inheritance {
+  position:relative;
+  /* top : 2770px;
+  left: 50px; */
+  height:300px;
+  width:300px;
+
+}
+.multilevelinher {
+  position:relative;
+  /* top : 3150px;
+  left: 50px; */
+  height:300px;
+  width:300px;
+
+}
+.multiinher {
+  position:relative;
+  /* top : 3520px;
+  left: 50px; */
+  height:350px;
+  width:300px;
+
+}
+.access {
+  position:relative;
+  /* top : 4010px;
+  left: 50px; */
+  height:350px;
+  width:300px;
+
+}
+.poly1 {
+  position:relative;
+  /* top : 4500px;
+  left: 50px; */
+  height:350px;
+  width:300px;
+
+}
+.files {
+  position:relative;
+  /* top : 4930px;
+  left: 50px; */
+  height:350px;
+  width:350px;
+
+}
+.filetable {
+  position:relative;
+  /* top : 5300px;
+  left: 50px; */
+  height:150px;
+  width:500px;
+
+}
+.readwrite {
+  position:relative;
+  /* top : 5700px;
+  left: 50px; */
+  height:300px;
+  width:400px;
+
+}
