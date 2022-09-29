@@ -1,0 +1,571 @@
+<div class="navbar">
+    <a routerLink="/homepage">Dashboard</a>
+    <!-- <a routerLink="/profile">Profile</a> -->
+    <div class="dropdown">
+      <button class="dropbtn">Courses 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a routerLink='/programLang'>Programming</a>
+      <a routerLink="/interview">Interview preparation</a>
+      <a routerLink="/mcq">Aptitude</a>
+      </div>
+    </div> 
+    <div class="logout">
+    <a routerLink="/mainpage" style="right:0">Logout</a>
+  </div>
+  </div>
+<h1>Practice Test</h1>
+
+<form method="POST" class="is-not-results">
+	<fieldset>
+        <legend>1. It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?</legend>
+		<div class="answers">
+			<div class="answer">
+				<input type="radio" name="answers[0]" id="answer-0-1" value="1" required>
+				<label for="answer-0-1" class="answer__item answer__item--is-correct">
+                    Friday 
+                    <span class="answer__reveal-text"><br><br><b>Explaination:</b><br>On 31st December, 2005 it was Saturday.<br>
+                        Number of odd days from the year 2006 to the year 2009 = (1 + 1 + 2 + 1) = 5 days.<br>
+                         On 31st December 2009, it was Thursday.<br>
+                        Thus, on 1st Jan, 2010 it is Friday.</span>
+        </label>
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[0]" id="answer-0-2" value="2" required>
+				<label for="answer-0-2" class="answer__item">
+                    Saturday
+                    </label>
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[0]" id="answer-0-3" value="3" required>
+				<label for="answer-0-3" class="answer__item">
+                    Sunday
+                </label>
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[0]" id="answer-0-4" value="4" required>
+				<label for="answer-0-4" class="answer__item">
+                   Monday
+                </label>
+			</div>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>2. What was the day of the week on 28th May, 2006?</legend>
+		<div class="answers">
+			<div class="answer">
+				<input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
+				<label for="answer-1-1" class="answer__item">
+                    Monday
+                </label>
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[1]" id="answer-1-2" value="2" required>
+				<label for="answer-1-2" class="answer__item">
+                    Tuesday
+                </label>
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[1]" id="answer-1-3" value="3" required>
+				<label for="answer-1-3" class="answer__item answer__item--is-correct">
+                    Sunday
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>28 May, 2006 = (2005 years + Period from 1.1.2006 to 28.5.2006)
+                        Odd days in 1600 years = 0<br>
+                        Odd days in 400 years = 0<br>
+                        5 years = (4 ordinary years + 1 leap year) = (4 x 1 + 1 x 2)  6 odd days<br>
+                        Jan.  Feb.   March    April    May <br>
+                        (31 +  28  +  31   +   30   +   28 ) = 148 days<br>
+                         148 days = (21 weeks + 1 day)  1 odd day.<br>
+                        Total number of odd days = (0 + 0 + 6 + 1) = 7  0 odd day.<br>
+                        Given day is Sunday.</span>
+        </label>
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[1]" id="answer-1-4" value="4" required>
+				<label for="answer-1-4" class="answer__item">
+                    Friday
+                </label>
+			</div>
+		</div>
+	</fieldset>
+    <fieldset>
+		<legend>3. What is the percentage change if the price of an idly increases from Rs. 25 to Rs. 35?</legend>
+		<div class="answers">
+			<div class="answer">
+				<input type="radio" name="answers[2]" id="answer-2-1" value="1" required>
+				<label for="answer-2-1" class="answer__item">
+                    70%
+                </label>
+            <div class="answer">
+                    <input type="radio" name="answers[2]" id="answer-2-2" value="3" required>
+                    <label for="answer-2-2" class="answer__item answer__item--is-correct">
+                        40%
+                        <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>The percentage increase in the price can be computed as Percentage change = (10/25)*100 = 40%</span>
+            </label>
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[2]" id="answer-2-3" value="2" required>
+				<label for="answer-2-3" class="answer__item">
+                    45%
+                </label>
+			</div>
+			
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[2]" id="answer-2-4" value="4" required>
+				<label for="answer-2-4" class="answer__item">
+                    50%
+                </label>
+			</div>
+		</div>
+	</fieldset>
+    <fieldset>
+		<legend>4. A tree of height 60m was cut such that its height reduced by 25%. What is it's present height?</legend>
+		<div class="answers">
+			<div class="answer">
+				<input type="radio" name="answers[3]" id="answer-3-1" value="1" required>
+				<label for="answer-3-1" class="answer__item">
+                    50m
+                </label>
+            <div class="answer">
+                    <input type="radio" name="answers[3]" id="answer-3-2" value="3" required>
+                    <label for="answer-3-2" class="answer__item answer__item--is-correct">
+                        45m
+                        <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>Final height = Original Height (1 - (r/100))<br>
+                            = 60 (1 - (25/100))<br>
+                            = 60 (3/4) = 45m</span>
+            </label>
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[3]" id="answer-3-3" value="2" required>
+				<label for="answer-3-3" class="answer__item">
+                    55m
+                </label>
+			</div>
+			
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[3]" id="answer-3-4" value="4" required>
+				<label for="answer-3-4" class="answer__item">
+                    60m
+                </label>
+			</div>
+		</div>
+	</fieldset>
+    <fieldset>
+		<legend>5. The cost price of 18 lemons is equal to the selling price of 20 lemons. Find the gain or loss %.</legend>
+		<div class="answers">
+			<div class="answer">
+				<input type="radio" name="answers[4]" id="answer-4-1" value="1" required>
+				<label for="answer-4-1" class="answer__item">
+                    Gain of 10%
+                </label>
+            
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[4]" id="answer-4-2" value="2" required>
+				<label for="answer-4-2" class="answer__item">
+                    Loss of 15%
+                </label>
+			</div>
+			
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[4]" id="answer-4-3" value="3" required>
+				<label for="answer-4-3" class="answer__item">
+                    Gain of 15%
+                </label>
+			</div>
+            <div class="answer">
+                <input type="radio" name="answers[4]" id="answer-4-4" value="4" required>
+                <label for="answer-4-4" class="answer__item answer__item--is-correct">
+                    Loss of 10%
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>18 lemons CP = 20 lemons SP<br>
+                        18 CP = 20 SP<br>
+                        SP = 18/20 CP<br>
+                        SP = 0.9 CP<br> 
+                        Hence loss of 10%</span>
+            </label>
+		    </div>
+	</fieldset>
+    <fieldset>
+		<legend>6. In how many ways can a committee of 1 man and 3 women can be formed from a group of 3 men and 4 women?</legend>
+		<div class="answers">
+            <div class="answer">
+                <input type="radio" name="answers[5]" id="answer-5-1" value="1" required>
+                <label for="answer-5-1" class="answer__item answer__item--is-correct">
+                    12 ways
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>a) No. of ways 1 man can be selected from a group of 3 men = 3C1 = 3! / 1!*(3-1)! = 3 ways.<br>
+                        b) No. of ways 3 women can be selected from a group of 4 women = 4C3 = 4! / (3!*1!) = 4 ways.<br>
+                        Hence, total ways = 3*4 = 12 ways.<br>
+                        
+                        </span>
+                </label>
+		    </div>
+			<div class="answer">
+				<input type="radio" name="answers[5]" id="answer-5-2" value="2" required>
+				<label for="answer-5-2" class="answer__item">
+                    10 ways
+                </label>
+            
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[5]" id="answer-5-3" value="3" required>
+				<label for="answer-5-3" class="answer__item">
+                   11 ways
+                </label>
+			</div>
+			
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[5]" id="answer-5-4" value="4" required>
+				<label for="answer-5-4" class="answer__item">
+                    15 ways
+                </label>
+			</div>
+            
+	</fieldset>
+    <fieldset>
+		<legend>7. A mother said to her daughter, " I was as old as you are at present at the time of your birth. " If the mother's age is 34 now, what would be the daughter's age 4 years back?</legend>
+		<div class="answers">
+            <div class="answer">
+				<input type="radio" name="answers[6]" id="answer-6-1" value="1" required>
+				<label for="answer-6-1" class="answer__item">
+                    11 years
+                </label>
+            
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[6]" id="answer-6-2" value="2" required>
+				<label for="answer-6-2" class="answer__item">
+                   12 years
+                </label>
+			</div>
+			
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[6]" id="answer-6-3" value="3" required>
+				<label for="answer-6-3" class="answer__item">
+                    10 years
+                </label>
+			</div>
+            <div class="answer">
+                <input type="radio" name="answers[6]" id="answer-6-4" value="4" required>
+                <label for="answer-6-4" class="answer__item answer__item--is-correct">
+                    13 years 
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>Let the daughter's present age be x years .Then, (34 - x) = x => x= 17. <br>
+                        Daughter's age 4 years back = (17 - 4) = 13 years<br>
+                        </span>
+                </label>
+		    </div>
+            
+	</fieldset>
+    <fieldset>
+		<legend>8. A man can row 6 km/h in still water and the river flows at 4km/h. If he takes 1.5 h to row to a place and back, how far is the place?</legend>
+		<div class="answers">
+            <div class="answer">
+				<input type="radio" name="answers[7]" id="answer-7-1" value="1" required>
+				<label for="answer-7-1" class="answer__item">
+                    3.5km
+                </label>
+            
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[7]" id="answer-7-2" value="2" required>
+				<label for="answer-7-2" class="answer__item">
+                   5.5km
+                </label>
+			</div>
+            </div>
+            <div class="answer">
+                <input type="radio" name="answers[7]" id="answer-7-3" value="3" required>
+                <label for="answer-7-3" class="answer__item answer__item--is-correct">
+                    2.5km
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>Downstream speed = (6+4) km/h<br>
+                        Upstream speed = (6-4) km/h<br>
+                        Let distance be d, then<br>
+                        d/10 + d/2 = 3/2<br>
+                        10d = 30/2<br>
+                        Therefore d = 2.5 km
+                        </span>
+                </label>
+		    </div>
+			<div class="answer">
+				<input type="radio" name="answers[7]" id="answer-7-4" value="4" required>
+				<label for="answer-7-4" class="answer__item">
+                    4.5km
+                </label>
+			</div>
+            
+            
+	</fieldset>
+    <fieldset>
+		<legend>9. "Some men are definitely intelligent, others are definitely not intelligent, but of intermediate men, we should say, 'intelligent'? Yes, I think, so or no, I shouldn't be inclined to call him intelligent." Which of the following reflects the intention of the writer well?<br>
+            a) To call men intelligent who are not strikingly so must be to use the concept with undue imprecision<br>
+            b) Every empirical concept has a degree of vagueness<br>
+            c) Calling someone intelligent or not depends upon one's whim<br>
+            d) There is no need to be as indecisive as the writer of the above</legend>
+		<div class="answers">
+            <div class="answer">
+                <input type="radio" name="answers[8]" id="answer-8-1" value="1" required>
+                <label for="answer-8-1" class="answer__item answer__item--is-correct">
+                    Option a
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>The Writer clearly states in the last part of his statement, that he should or should not be inclined to call him intelligent. The only option, which reflects that intention, is the first option and thus is the answer.<br><br>
+                        Option B is wrong because we cannot generalise all empirical concepts to be vague on basis of this and it is irrelevant also. Option C and D are also vague.
+                        
+                        </span>
+                </label>
+		    </div>
+            <div class="answer">
+				<input type="radio" name="answers[8]" id="answer-8-2" value="2" required>
+				<label for="answer-8-2" class="answer__item">
+                    Option d
+                </label>
+            
+			</div>
+			<div class="answer">
+				<input type="radio" name="answers[8]" id="answer-8-3" value="3" required>
+				<label for="answer-8-3" class="answer__item">
+                   Option c
+                </label>
+			</div>
+            </div>
+            
+			<div class="answer">
+				<input type="radio" name="answers[8]" id="answer-8-4" value="4" required>
+				<label for="answer-8-4" class="answer__item">
+                    Option b
+                </label>
+			</div>
+            
+            
+	</fieldset>
+    <fieldset>
+		<legend>10. Arrange the words given below in a meaningful sequence.<br>
+            1. Police 2. Punishment 3. Criminal 4. Judge 5. Verdict
+            </legend>
+		<div class="answers">
+            <div class="answer">
+				<input type="radio" name="answers[9]" id="answer-9-1" value="1" required>
+				<label for="answer-9-1" class="answer__item">
+                    1, 2, 4, 3, 5
+                </label>
+            
+			</div>
+            <div class="answer">
+                <input type="radio" name="answers[9]" id="answer-9-2" value="2" required>
+                <label for="answer-9-2" class="answer__item answer__item--is-correct">
+                    3, 1, 4, 5, 2
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>The correct order is :<br>
+                        Criminal-Police-Judge-Verdict-Punishment
+                        
+                        </span>
+                </label>
+		    </div>
+			<div class="answer">
+				<input type="radio" name="answers[9]" id="answer-9-3" value="3" required>
+				<label for="answer-9-3" class="answer__item">
+                    3, 1, 2, 4, 5
+                </label>
+			</div>
+            </div>
+            
+			<div class="answer">
+				<input type="radio" name="answers[9]" id="answer-9-4" value="4" required>
+				<label for="answer-9-4" class="answer__item">
+                    5, 4, 3, 2, 1
+                </label>
+			</div>
+    </fieldset>
+    <fieldset>
+		<legend>11. Find the angle between the minute hand and the hour hand of a clock when the time is 6.30.
+            </legend>
+		<div class="answers">
+            <div class="answer">
+				<input type="radio" name="answers[10]" id="answer-10-1" value="1" required>
+				<label for="answer-10-1" class="answer__item">
+                    10 degrees
+                </label>
+            
+			</div>
+            <div class="answer">
+                <input type="radio" name="answers[10]" id="answer-10-2" value="2" required>
+                <label for="answer-10-2" class="answer__item answer__item--is-correct">
+                    15 degrees
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>Angle traced by hour hand in 13/2 hours = [(360/12 x 13/2)° = 195°<br>
+                        Angle traced by min. hand in 30 minutes = [(360/60) x (30)] degrees = 180°<br>
+                        Required angle = (195 - 180)° = 15°
+                        
+                        </span>
+                </label>
+		    </div>
+			<div class="answer">
+				<input type="radio" name="answers[10]" id="answer-10-3" value="3" required>
+				<label for="answer-10-3" class="answer__item">
+                    17 degrees
+                </label>
+			</div>
+            </div>
+            
+			<div class="answer">
+				<input type="radio" name="answers[10]" id="answer-10-4" value="4" required>
+				<label for="answer-10-4" class="answer__item">
+                    20 degrees
+                </label>
+			</div>
+    </fieldset>
+    <fieldset>
+		<legend>12. A man walked 30 m towards the North. Then he turned right and walked 45 m. Then he turns right and walks 45 m. Then he turns left and walks 5 m. Finally, he turns left and walks 15 m. In which direction and how many meters is he from the starting position?
+            </legend>
+		<div class="answers">
+            <div class="answer">
+				<input type="radio" name="answers[11]" id="answer-11-1" value="1" required>
+				<label for="answer-11-1" class="answer__item">
+                    55m East
+                </label>
+            
+			</div>
+            <div class="answer">
+				<input type="radio" name="answers[11]" id="answer-11-2" value="2" required>
+				<label for="answer-11-2" class="answer__item">
+                    50m West
+                </label>
+			</div>
+            </div>
+            
+			<div class="answer">
+				<input type="radio" name="answers[11]" id="answer-11-3" value="3" required>
+				<label for="answer-11-3" class="answer__item">
+                    15m West
+                </label>
+			</div>
+            <div class="answer">
+                <input type="radio" name="answers[11]" id="answer-11-4" value="4" required>
+                <label for="answer-11-4" class="answer__item answer__item--is-correct">
+                    50m East
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>From the conditions given in the question above, we can make the following diagram, As we can see from the diagram, the man is 50m East from the starting point.
+                        
+                        </span>
+                </label>
+		    </div>
+    </fieldset>
+    <fieldset>
+		<legend>13. A man buys two goats at Rs. 120 each. He sells one at 25% gain and other at 25% loss. How mush is his profit or loss?
+            </legend>
+		<div class="answers">
+            <div class="answer">
+				<input type="radio" name="answers[12]" id="answer-12-1" value="1" required>
+				<label for="answer-12-1" class="answer__item">
+                    Rs. 255
+                </label>
+            
+			</div>
+            <div class="answer">
+				<input type="radio" name="answers[12]" id="answer-12-2" value="2" required>
+				<label for="answer-12-2" class="answer__item">
+                    Rs. 260
+                </label>
+			</div>
+            </div>
+            <div class="answer">
+                <input type="radio" name="answers[12]" id="answer-12-3" value="3" required>
+                <label for="answer-12-3" class="answer__item answer__item--is-correct">
+                    Rs. 240
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>Total cost price of two goats = 120 + 120 = Rs. 240<br>
+                        Total selling price of two goats  = Profit 25% of 120 + Loss 25% of 120<br>
+                                                                       = 150 + 90 = Rs. 240
+                        </span>
+                </label>
+		    </div>
+            
+			<div class="answer">
+				<input type="radio" name="answers[12]" id="answer-12-4" value="4" required>
+				<label for="answer-12-4" class="answer__item">
+                    Rs. 245
+                </label>
+			</div>
+            
+    </fieldset>
+    <fieldset>
+		<legend>14. In 10 years, Ananya will be twice as old as Bhavna was 15 years ago. If Ananya is now 7 years older than Bhavna, what is the present age of Bhavna?
+            </legend>
+		<div class="answers">
+            <div class="answer">
+				<input type="radio" name="answers[13]" id="answer-13-1" value="1" required>
+				<label for="answer-13-1" class="answer__item">
+                    50
+                </label>
+            
+			</div>
+            <div class="answer">
+				<input type="radio" name="answers[13]" id="answer-13-2" value="2" required>
+				<label for="answer-13-2" class="answer__item">
+                    45
+                </label>
+			</div>
+            </div>
+            <div class="answer">
+                <input type="radio" name="answers[13]" id="answer-13-3" value="3" required>
+                <label for="answer-13-3" class="answer__item answer__item--is-correct">
+                    55
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>Let Bhavna's present age = x years. Then, Ananya's present age = (x + 7) years.<br>
+                        (x + 7) + 15 = 2(x - 15)<br>
+                         => x + 22 = 2x - 30<br>
+                         => x = 55.
+                        </span>
+                </label>
+		    </div>
+            
+			<div class="answer">
+				<input type="radio" name="answers[13]" id="answer-13-4" value="4" required>
+				<label for="answer-13-4" class="answer__item">
+                    60
+                </label>
+			</div>
+            
+    </fieldset>
+    <fieldset>
+		<legend>15. Offshore oil-drilling operations involve an unavoidable risk of an oil spill, but importing oil on tankers presently involves an even greater such risk per barrel of oil. So, if we are to lessen the risk of an oil spill without reducing our oil usage, we must invest more in offshore operations and import less oil on tankers.<br>
+            Which of the following, if true, seriously weakens the argument above?<br>
+            a) Importing oil on tankers is currently less expensive than drilling for it offshore.<br>
+            b) Tankers can easily be redesigned so that their use entails less risk of an oil spill.<br>
+            c) The impact of offshore operations on the environment can be reduced by careful management.<br>
+            d) Oil spills caused by tankers have generally been more serious than those caused by offshore operations.
+            </legend>
+		<div class="answers">
+            <div class="answer">
+                <input type="radio" name="answers[14]" id="answer-14-1" value="1" required>
+                <label for="answer-14-1" class="answer__item answer__item--is-correct">
+                    Option b
+                    <span class="answer__reveal-text"><br><br><b>Explanation:</b><br>We have to go against investment in offshore drilling and support importing oil on tankers. In that case, the argument is weakened because the lowered risk of oil spills resulting from improved oil tanker design could actually make tankers less problematic than offshore operations.
+                        This is present in choice 2.
+                        </span>
+                </label>
+		    </div>
+            <div class="answer">
+				<input type="radio" name="answers[14]" id="answer-14-2" value="2" required>
+				<label for="answer-14-2" class="answer__item">
+                    Option d
+                </label>
+            
+			</div>
+            <div class="answer">
+				<input type="radio" name="answers[14]" id="answer-14-3" value="3" required>
+				<label for="answer-14-3" class="answer__item">
+                    Option a
+                </label>
+			</div>
+            </div>
+            <div class="answer">
+				<input type="radio" name="answers[14]" id="answer-14-4" value="4" required>
+				<label for="answer-14-4" class="answer__item">
+                    Option c
+                </label>
+			</div>
+            
+    </fieldset>
+    <div id="message">
+		<h1><b>Your Score:</b> <span class="score" data-question-count="15"></span></h1>
+	</div>
+</form>
