@@ -1,0 +1,133 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow:hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(0, 140, 255);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  body , html {
+    height : 100%;
+  }
+  .logout{
+    float:right;
+    background-color: rgb(170, 12, 12);
+  }
+  .while {
+      position:absolute;
+      top : 200px;
+      right: 500px;
+
+  }
+  .dowhile {
+    position:absolute;
+    top : 400px;
+    right: 100px;
+
+}
+.if {
+    position:absolute;
+    top : 1050px;
+    left: 100px;
+    height:100px;
+    width:500px;
+
+}
+.else {
+    position:absolute;
+    top : 1280px;
+    left: 100px;
+    height:150px;
+    width:300px;
+
+}
+.elseif {
+    position:absolute;
+    top : 1490px;
+    left: 100px;
+    height:150px;
+    width:500px;
+
+}
+.func1 {
+    position:absolute;
+    top : 2020px;
+    left: 100px;
+    height:350px;
+    width:900px;
+
+}
+.func2 {
+    position:absolute;
+    top : 2371px;
+    left: 102px;
+    height:350px;
+    width:900px;
+
+}
+.func3 {
+    position:absolute;
+    top : 2720px;
+    left: 101px;
+    height:350px;
+    width:900px;
+
+}
+.func4 {
+    position:absolute;
+    top : 3080px;
+    left: 102px;
+    height:350px;
+    width:900px;
+
+}
