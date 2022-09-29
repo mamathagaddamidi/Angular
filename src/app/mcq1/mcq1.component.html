@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ</title>
+
+</head>
+<body>
+    <div class="navbar">
+        <a routerLink="/homepage">Dashboard</a>
+        <!-- <a routerLink="/profile">Profile</a> -->
+        <div class="dropdown">
+          <button class="dropbtn">Courses 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a routerLink='/programLang'>Programming</a>
+            <a href="#">Interview preparation</a>
+            <a href="#">Aptitude</a>
+          </div>
+        </div> 
+        <div class='logout'>
+        <a routerLink="/login">Logout</a>
+      </div>
+        
+      </div>
+
+    <div class="wrappper">
+        <h1>Aptitude</h1>
+        <button routerLink="/mcq" class="btn btn-info btn-lg" style="float:left">Prev</button>
+        <button routerLink="/Logicalreasoning" class="btn btn-info btn-lg" style="float:right">Next</button>
+    <ul class="tab-wrap">
+        <li>
+            <input type="radio" id="tab-6" name="tab" checked>
+            <label for="tab-6">Question-6</label>
+            <div class="tab-content">
+                <h2>Question-6</h2>
+                <p>A single soul can merge with another soul in every second, and thus two souls get reduced to a single
+                    soul. If a soul cannot merge with another soul, then it becomes a ghost. Every soul tries not to become a
+                    ghost. On a particular day, there were (2^42000 - 1) souls. After how many seconds will all souls become
+                    ghosts.
+                </p>
+                <p><b>1.</b>42000 seconds</p>
+                <p><b>2.</b>21000 seconds</p>
+                <p><b>3.</b>41999 seconds</p>
+                <p><b>4.</b>20999 seconds</p>
+                <button class="btn btn-info btn-lg" onclick="getElementById('demo15').innerHTML='Option 1'">View Answer</button>
+                    <p id="demo15"></p>
+
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="tab-7" name="tab">
+            <label for="tab-7">Question-7</label>
+            <div class="tab-content">
+                <h2>Question-7</h2>
+                <p>A can do a piece of work in 4 days, B can do it in 20 days. With the help of C, they finish the work in 2
+                    days. In how many days C alone can do the whole work?
+                </p>
+                <p><b>1.</b>4 days</p>
+                <p><b>2.</b>5 days</p>
+                <p><b>3.</b>6 days</p>
+                <p><b>4.</b>7 days</p>
+                <button class="btn btn-info btn-lg" onclick="getElementById('demo16').innerHTML='Option 2'">View Answer</button>
+                    <p id="demo16"></p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="tab-8" name="tab">
+            <label for="tab-8">Question-8</label>
+            <div class="tab-content">
+                <h2>Question-8</h2>
+                <p>A train normally covers a certain distance at a speed of 100 km/hr. However, if it were to halt for a
+                    fixed time interval in each hour its average speed reduced to 80 km/hr. What is the average time interval
+                    for which the train halts in each hour?
+                </p>
+                    <p><b>1.</b>10 minutes</p>
+                    <p><b>2.</b>12 minutes</p>
+                    <p><b>3.</b>15 minutes</p>
+                    <p><b>4.</b>20 minutes</p>
+                    <button class="btn btn-info btn-lg" onclick="getElementById('demo17').innerHTML='Option 2'">View Answer</button>
+                    <p id="demo17"></p>
+            </div>
+
+        </li>
+        <li>
+            <input type="radio" id="tab-9" name="tab">
+            <label for="tab-9">Question-9</label>
+            <div class="tab-content">
+                <h2>Question-9</h2>
+                <p>Monthly incomes of A and B are in the ratio of 5:4 and their savings are in the ratio of 4:3. If the
+                    expenditure of each will be 600, then the monthly incomes of each are?
+                </p>
+                    <p><b>1.</b>3000, 2400</p>
+                    <p><b>2.</b>2400, 1920</p>
+                    <p><b>3.</b>5000, 4000</p>
+                    <p><b>4.</b>3500, 2800</p>
+                    <button class="btn btn-info btn-lg" onclick="getElementById('demo18').innerHTML='Option 1'">View Answer</button>
+                    <p id="demo18"></p>
+            </div>
+
+        </li>
+        <li>
+            <input type="radio" id="tab-10" name="tab">
+            <label for="tab-10">Question-10</label>
+            <div class="tab-content">
+                <h2>Question-10</h2>
+                <p>A traveled from B to C covering a total distance of 300 km in 9 hrs. He traveled by car at 25 km/h and
+                    the rest by train at 40 km/h. The distance traveled by car is:
+                </p>
+                    <p><b>1.</b>80</p>
+                    <p><b>2.</b>85</p>
+                    <p><b>3.</b>95</p>
+                    <p><b>4.</b>100</p>
+                    <button class="btn btn-info btn-lg" onclick="getElementById('demo19').innerHTML='Option 4'">View Answer</button>
+                    <p id="demo19"></p>
+            </div>
+
+        </li>
+
+
+    </ul>
+</div>
+</body>
+
+</html>
