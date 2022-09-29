@@ -1,0 +1,72 @@
+<!-- Username : <input type = "text" [(ngModel)] = "loginId"/> <br/>
+Password : <input type = "password" [(ngModel)] = "password"/> <br/> -->
+
+<!-- <button (click)='loginSubmit()'> Login </button> -->
+
+<!-- <style>
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .credentials{
+        margin: 200;
+        /* display:block */
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        color:black;
+        font-size:18px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); 
+    }
+    .pass{
+        margin: 200;
+        /* display:block */
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        color:black;
+        font-size:18px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);    
+    }
+</style>
+<div class= "credentials">
+    Username : <input type = "text" [(ngModel)] = "loginId"/> <br/>
+</div>
+<div class = "pass">
+    Password : <input type = "password" [(ngModel)] = "password"/> <br/>
+</div>
+<div class="center">
+    <button (click)='loginSubmit()'> Login </button>
+</div>
+<div class = "image">
+    <img [src] = "myImage" alt = " ">
+</div> -->
+
+<!-- <button type="button" style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">
+    mybuttonname
+ </button>  -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+ <div class="bg-img">
+    <img class="logo" src="assets\images\logo2.jpg"/>
+    <img class="studypic" src="assets\images\studypic.jpg"/>
+    <form #loginForm="ngForm" (ngSubmit)="loginSubmit(loginForm.value)" class="container">
+      <h1>Login</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" class="form-control" placeholder="Enter Email" ngModel name="email" #email=ngModel required>
+  
+      <label for="password"><b>Password</b></label>
+      <input type="password" class="form-control" placeholder="Enter Password" ngModel name="password" #password = ngModel required>
+  
+      <button type="submit" class="btn">Login</button><br>
+      <!-- <button (click)='newLogin()'> New User? </button> -->
+      <!-- <router-outlet></router-outlet> -->
+      <a routerLink="/mainpage"><-Back</a>
+    </form>
+  </div>
