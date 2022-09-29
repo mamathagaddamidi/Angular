@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to Node and MongoDB</title>
+    </head>
+
+    <body>
+        <h1>Into to Node and MongoDB</h1>
+        <form method="post" action="/addname">
+            <label>Enter Your Name</label><br>
+            <input type="text" name="sname" placeholder="Enter first name..." required><br>
+            <label>Enter Your Email</label><br>
+            <input type="email" name="email" placeholder="Enter email..." required><br>
+            <label>Enter Your Password</label><br>
+            <input type="password" name="password" placeholder="Enter password..." required><br>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<div class="bg-img">
+  <img class="logo" src="assets\images\logo2.jpg"/>
+    <img class="sign_pic" src="assets\images\spic.jpg"/>
+  <div class="container" style="width:500px">
+    <!-- <form method="post" action="/addname"> -->
+    <form #registerForm="ngForm" (ngSubmit)="signUp(registerForm.value)">
+      <!-- class="container"> -->
+      <h1>Sign Up</h1>
+  
+        <label>Name</label><br>
+        <input type="text" ngModel name="sname" #sname=ngModel placeholder="Enter first name..." class="form-control" required>
+        <label>Email</label><br>
+        <input type="text" ngModel name="email" #email=ngModel placeholder="Enter your email..." class="form-control" required>
+        <label>Password</label><br>
+        <input type="password" ngModel name="password" #password=ngModel placeholder="Enter password..." class="form-control" required>
+        <label>Confirm Password</label><br>
+        <input type="password" ngModel name="c_password" #c_password=ngModel placeholder="Confirm password..." class="form-control" required>
+        <button type="submit" class="btn" >Register</button><br>
+        <!-- <button type="submit" class="btn" (click)='checkPwd()'> Register </button> -->
+    </form>
+  </div>
+  </div>
