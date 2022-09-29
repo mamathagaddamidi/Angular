@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="navbar">
+        <a routerLink="/homepage">Dashboard</a>
+        <!-- <a routerLink="/profile">Profile</a> -->
+        <div class="dropdown">
+          <button class="dropbtn">Courses 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a routerLink='/programLang'>Programming</a>
+      <a routerLink="/interview">Interview preparation</a>
+      <a routerLink="/mcq">Aptitude</a>
+          </div>
+        </div> 
+        <div class='logout'>
+        <a routerLink="/login">Logout</a>
+      </div>
+        
+      </div>
+    <div class="wrappper">
+        <h1>Logicalreasoning</h1>
+        <button routerLink="/LR1" class="btn btn-info btn-lg" style="float:left">Prev</button>
+        <!-- <button routerLink="/LR1" class="btn btn-info btn-lg" style="float:right">Next</button> -->
+        <ul class="tab-wrap">
+            <li>
+                <input type="radio" id="tab-11" name="tab" checked>
+                <label for="tab-11">Question-11</label>
+                <div class="tab-content">
+                    <h2>Question-11</h2>
+                    <p>What will be the next term in the following series? A B B D C F D H EJ?
+                    </p>
+                    <p><b>1.</b>N</p>
+                    <p><b>2.</b>O</p>
+                    <p><b>3.</b>K</p>
+                    <p><b>4.</b>F</p>
+                    <button class="btn btn-info btn-lg" onclick="getElementById('demo').innerHTML='Option 4'">View Answer</button>
+                    <p id="demo"></p>
+
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="tab-12" name="tab">
+                <label for="tab-12">Question-12</label>
+                <div class="tab-content">
+                    <h2>Question-12</h2>
+                    <p>REPORT is related to UGSQUV in the same way as LONGER is related to
+                    </p>
+                    <p><b>1.</b>OQPIHT</p>
+                    <p><b>2.</b>OQQFGS</p>
+                    <p><b>3.</b>OQQIHT</p>
+                    <p><b>4.</b>QPQHIT</p>
+                    <button class="btn btn-info btn-lg" onclick="getElementById('demo1').innerHTML='Option 4'">View Answer</button>
+                    <p id="demo1"></p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="tab-13" name="tab">
+                <label for="tab-13">Question-13</label>
+                <div class="tab-content">
+                    <h2>Question-13</h2>
+                    <p>Ajay walked 2m towards the east, took a right turn, and walked 7m. He then took a left turn and
+                        walked 5m before taking a left turn and walking 7m. He then took a final right turn and walked 1m before
+                        stopping. How far is Ajay from the starting point?
+                    </p>
+                        <p><b>1.</b>8m</p>
+                        <p><b>2.</b>7m</p>
+                        <p><b>3.</b>6m</p>
+                        <p><b>4.</b>5m</p>
+                        <p><b>5.</b>9m</p>
+                        <button class="btn btn-info btn-lg" onclick="getElementById('demo2').innerHTML='Option 1'">View Answer</button>
+                    <p id="demo2"></p>
+                        
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" id="tab-14" name="tab">
+                <label for="tab-14">Question-14</label>
+                <div class="tab-content">
+                    <h2>Question-14</h2>
+                    <p>Read the statements and arguments and select the appropriate option:
+                    </p>
+                    <p>Statement: Should cell phones be allowed to be used in the classroom?</p>
+                    <p>Arguments:</p>
+                    <p><b>I.</b>Yes. Cell phones give students access to tools and apps that can help them complete and stay on top
+                        of their class work.</p>
+                    <p><b>II.</b>No. Cell phones can be used by students to access information while taking a test, leading to
+                        cheating.</p>
+                        <p><b>1.</b>Only argument I is strong</p>
+                        <p><b>2.</b>Only argument II is strong</p>
+                        <p><b>3.</b>Either I or II is strong</p>
+                        <p><b>4.</b>Neither I nor II is strong</p>
+                        <p><b>5.</b>Both I and II are strong.</p>
+                        <button class="btn btn-info btn-lg" onclick="getElementById('demo3').innerHTML='Option 5'">View Answer</button>
+                    <p id="demo3"></p>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" id="tab-15" name="tab">
+                <label for="tab-15">Question-15</label>
+                <div class="tab-content">
+                    <h2>Question-15</h2>
+                    <p>In a certain code language,'ANIMALS' is written as 'SLAMINA'.How is 'ONLINE'
+                        written in last code?
+                    </p>
+                        <p><b>1.</b>ENILNO</p>
+                        <p><b>2.</b>OLINEN</p>
+                        <p><b>3.</b>EINONL</p>
+                        <p><b>4.</b>LNOINE</p>
+                        <button class="btn btn-info btn-lg" onclick="getElementById('demo4').innerHTML='Option 1'">View Answer</button>
+                    <p id="demo4"></p>
+                        
+                        
+                </div>
+
+            </li>
+
+
+        </ul>
+    </div>
+    </body>
+    </html>
