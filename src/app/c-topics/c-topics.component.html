@@ -1,0 +1,81 @@
+<div class="navbar">
+    <a routerLink="/homepage">Dashboard</a>
+    <div class="dropdown">
+      <button class="dropbtn">Courses 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a routerLink='/programLang'>Programming</a>
+      <a routerLink="/interview">Interview preparation</a>
+      <a routerLink="/mcq">Aptitude</a>
+      </div>
+    </div> 
+    <div class="logout">
+      <a routerLink="/mainpage">Logout</a>
+    </div>
+  </div>
+  <h2>&nbsp;<u>C-Array</u></h2>
+  <p>An array is defined as the collection of similar type of data items stored at contiguous memory locations. Arrays are the derived data type in C programming language which can store the primitive type of data such as int, char, double, float, etc. It also has the capability to store the collection of derived data types, such as pointers, structure, etc. The array is the simplest data structure where each data element can be randomly accessed by using its index number.</p>
+  <p>C array is beneficial if you have to store similar elements.<br></p>
+    <h3>Properties of Array:</h3>
+  <ul>
+      <li>Each element of an array is of same data type and carries the same size, i.e., int = 4 bytes.</li>
+      <li>Elements of the array are stored at contiguous memory locations where the first element is stored at the smallest memory location.</li>
+      <li>Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.</li>
+  </ul>
+  <h3>Declaring the array</h3>
+  <b>Syntax : </b><br>
+  <p>data_type array_name[array_size] ;</p>
+  <b>Example : </b><br>
+  <p>int marks[6] ;</p>
+  <img  class="img1" src="\assets\images\carrinit.jpg" style = "width:750px"/>
+<h3>Two Dimensional Array</h3>
+<p>The two-dimensional array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database lookalike data structure. It provides ease of holding the bulk of data at once which can be passed to any number of functions wherever required.</p>
+<h3>Declaring the 2-D array</h3>
+  <b>Syntax : </b><br>
+  <p>data_type array_name[rows][col] ;</p>
+  <b>Example : </b><br>
+  <p>int marks[6][5] ;</p>
+  <p><b>Example Program : </b></p>
+  <img  class="img2" src="\assets\images\carrprg.jpg" style = "width:750px"/>
+  <br><br>
+<h2>&nbsp;<u>C-Pointers</u></h2>
+<p>The pointer in C language is a variable which stores the address of another variable. This variable can be of type int, char, array, function, or any other pointer. The size of the pointer depends on the architecture. However, in 32-bit architecture the size of a pointer is 2 byte.</p>
+<img  class="img3" src="\assets\images\cptr.jpg" style = "width:450px"/>
+<!-- <br><br><br>
+<br><br><br> -->
+<p><b>Example program:</b></p>
+<img  class="img4" src="\assets\images\cptrprg.jpg" style = "width:750px"/>
+<!-- <br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br> -->
+<p><b>Output:</b><br>
+    value of number is 50, address of number is fff4</p>
+    <h2>&nbsp;<u>Strings</u></h2>
+  <p>The string can be defined as the one-dimensional array of characters terminated by a null ('\0'). The character array or the string is used to manipulate text such as word or sentences. Each character in the array occupies one byte of memory, and the last character must always be 0. The termination character ('\0') is important in a string since it is the only way to identify where the string ends. When we define a string as char s[10], the character s[10] is implicitly initialized with the null in the memory.</p>
+  <ol>
+      <li>By char array</li>
+      <li>By string literal</li>
+  </ol>
+  <img  class="img5" src="\assets\images\cstr.jpg" style = "width:550px"/>
+  <!-- <br><br><br><br><br><br><br><br>
+  <br><br><br> -->
+  <h3>String Functions</h3>
+  <img  class="img6" src="\assets\images\cstrfun.jpg" style = "width:650px"/>
+  <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+<h2>&nbsp;<u>C-Structure</u></h2>
+<p>Structure in c is a user-defined data type that enables us to store the collection of different data types. Each element of a structure is called a member. Structures ca; simulate the use of classes and templates as it can store various information
+The ,struct keyword is used to define the structure. Let's see the syntax to define the structure in c.</p>
+<p><b>Syntax: </b><br></p>
+<img  class="img7" src="\assets\images\cstructsyn.jpg" style = "width:650px"/>
+<!-- <br><br><br><br><br><br><br><br><br><br><br> -->
+<b>Example :</b><br><br>
+<img  class="img8" src="\assets\images\cstructex.jpg" style = "width:550px"/>
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+<h2>&nbsp;<u>C-Union</u></h2>
+<p>
+    Union can be defined as a user-defined data type which is a collection of different variables of different data types in the same memory location. The union can also be defined as many members, but only one member can contain a value at a particular point in time.Union is a user-defined data type, but unlike structures, they share the same memory location.
+</p>
+<b>Example : </b>
+<img  class="img9" src="\assets\images\cunionprg.jpg" style = "width:550px"/>
