@@ -1,0 +1,104 @@
+<div class="navbar">
+    <a routerLink="/homepage">Dashboard</a>
+    <div class="dropdown">
+      <button class="dropbtn">Courses 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a routerLink='/programLang'>Programming</a>
+      <a routerLink="/interview">Interview preparation</a>
+      <a routerLink="/mcq">Aptitude</a>
+      </div>
+    </div> 
+    <div class="logout">
+      <a routerLink="/mainpage">Logout</a>
+    </div>
+  </div>
+
+  <h1>&nbsp;<b><u>History</u></b></h1>
+  <p>C has often been termed as a "Pseudo high level language" or a "Middle level
+    language" by many programmers. This is not because of its lack of
+    programming power but because of its capability to access the system's low
+    level functions. In fact C was invented specifically to implement UNIX. C
+    instructions are compiled to assembly code, therefore, depending on the
+    complexity of the code and on the compiler optimization capabilities, C code
+    may run as fast as assemby.
+    Ken Thompson created the B language in 1969 from Martin Richard's BCPL
+    (Basic Combined Programming Language). He used assembly language and
+    B to produce the initial versions of the UNIX operating system. BCPL and B
+    were typeless languages in which variables were simply words in
+    memory. Dennis Ritchie of Bell Laboratories later converted B into C by
+    retaining most of B's syntax in 1972 and wrote the first compiler. This was
+    implemented on DEC's PDP 11 and it was first used as the system's language
+    for rewriting the UNIX operating system. Later on, UNIX, its tools and C
+    grew simultaneously. In 1978, Kernighan and Ritchie wrote a book entitled
+    'The C Programming Language' that became the language definition for
+    almost a decade. Beginning in 1983, the ANSI X3J11 committee was asked
+    to standardize the C language. The result was ANSI C, a standard which was
+    adopted in 1988. It is not forced upon any programmer, but since it is so
+    widely accepted, it would be economically unwise for any systems
+    programmer or compiler writer not to conform to the standard.</p>
+    <img  class="Image1" src="\assets\images\c_founder.jpg" style = "width:400px"/>
+  <!-- <br><br><br><br><br><br><br><br><br><br><br> -->
+  <h1>&nbsp;<b><u>Structure and Basic input/output</u></b></h1>
+  <h3>&nbsp;<b><u>structure of C Programming language</u></b></h3>
+  <img  class="Image2" src="\assets\images\c_structure.JPG" style = "width:400px"/>
+  <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+  <p>Some of C Header files</p>
+  <ul>
+      <li>
+        stddef.h – Defines several useful types and macros.</li>
+        <li>stdint.h – Defines exact width integer types.</li>
+        <li>stdio.h – Defines core input and output functions.</li>
+        <li>stdlib.h – Defines numeric conversion functions, pseudo-random network generator, memory allocation.</li>
+        <li>string.h – Defines string handling functions.</li>
+        <li>math.h – Defines common mathematical functions.</li>
+  </ul>
+<h3>&nbsp;<b><u>Basic input and output</u></b></h3>
+<p>For reading the input we use "scanf()" and writing "printf()" is used.</p>
+<ul>
+    <li>Syntax for reading: scanf(“%X”, &variableOfXType);</li>
+     <li>Syntax for printing : printf(“%X”, variableOfXType);</li>
+</ul>
+
+<img  class="Image3" src="\assets\images\c_basic_pg.JPG" style = "width:500px"/><br>
+<img  class="Image4" src="\assets\images\c_basic_pg._op.JPG" style = "width:400px"/>
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+<h1>&nbsp;<b><u>Variables</u></b></h1>
+<p>A variable definition tells the compiler where and how much storage to create for the variable.A variable definition specifies a data type and contains a list of one or more variables</p>
+<img  class="Image5" src="\assets\images\c_var_dec.JPG" style = "width:200px"/>
+<!-- <br><br><br><br><br><br> -->
+<h3>&nbsp;<b><u>Types of Variables</u></b></h3>
+<img  class="Image6" src="\assets\images\c_variables.jpg" style = "width:400px"/>
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+<h1>&nbsp;<b><u>Constants</u></b></h1>
+<img  class="Image7" src="\assets\images\c_constants.jpg" style = "width:500px"/>
+<br>
+<h1>&nbsp;<b><u>Datatypes</u></b></h1>
+<p>Each data type requires different amounts of memory and has some specific operations which can be performed over it.<br>
+Some very common data types used in C:</p>
+<ul>
+    <li>char: The most basic data type in C. It stores a single character and requires a single byte of memory in almost all compilers.</li>
+    <li>int: As the name suggests, an int variable is used to store an integer.</li>
+    <li>float: It is used to store decimal numbers (numbers with floating point value) with single precision.</li>
+    <li>double: It is used to store decimal numbers (numbers with floating point value) with double precision.</li>
+</ul>
+<img  class="Image8" src="\assets\images\c_datatypes.JPG" style = "width:500px"/>
+<h1>&nbsp;<b><u>Comments</u></b></h1>
+<p>Comments in C language are used to provide information about lines of code.<br>It is widely used for documenting code.<br>There are 2 types of comments in the C language.</p>
+<ul>
+    <li>
+        Single Line Comments</li>
+<li>Multi-Line Comments
+    </li>
+</ul>
+<h3>&nbsp;<b><u>Single Line Comments</u></b></h3>
+<p>Single line comments are represented by double slash "\\". Let's see an example of a single line comment in C.</p>
+<img  class="Image9" src="\assets\images\c_Scomment.JPG" style = "width:360px"/>
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+<h3>&nbsp;<b><u>Multi Line Comments</u></b></h3>
+<p>Multi-Line comments are represented by slash asterisk \* ... *\.<br>It can occupy many lines of code, but it can't be nested.<br>Syntax:</p>
+<img  class="Image10" src="\assets\images\c_Mcomment_syntax.JPG" style = "width:200px"/>
+<!-- <br><br><br><br><br> -->
+<p>Example:</p>
+<img  class="Image11" src="\assets\images\c_Mcomment_ex.JPG" style = "width:360px"/>
