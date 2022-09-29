@@ -1,0 +1,23 @@
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<div class="container">
+    <table class="table table-bordered table-striped table-hover table-sm">
+        <thead>
+            <tr class="bg-info text-white">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userdetails">
+                <td>{{user._id}}</td>
+                <td>{{user.sname}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
