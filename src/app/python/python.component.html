@@ -1,0 +1,60 @@
+<!-- <head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head> -->
+<div class="navbar">
+    <a routerLink="/homepage">Dashboard</a>
+    <div class="dropdown">
+      <button class="dropbtn">Courses 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a routerLink='/programLang'>Programming</a>
+      <a routerLink="/interview">Interview preparation</a>
+      <a routerLink="/mcq">Aptitude</a>
+      </div>
+    </div> 
+    <div class="logout">
+      <a routerLink="/mainpage">Logout</a>
+    </div>
+  </div>
+
+  <h1>&nbsp;<b><u>Learn Python</u></b></h1>
+  <p>&emsp;Python is a simple, general purpose, high level, and object-oriented programming .</p><p>&emsp;It can be used for everything from machine learning to building and testing websites.</p> <p>&emsp;Useful for both developers and non-developers.</p>
+
+  <img  class="image4" src="\assets\images\pythonpic.jpg" style = "width:300px"/>
+  <!--<ol>
+    <h2><li><a routerLink = "/homepage">Introduction</a></li></h2>
+    <h2><li><a routerLink = "/homepage">Conditional Statements, Loops & Functions</a></li></h2>
+    <h2><li><a routerLink = "/homepage">More Topics</a></li></h2>
+</ol>-->
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-card-2 w3-margin" style="max-width:400px;">
+  <header class="w3-container w3-light-blue w3-padding-16">
+    <h3><b>Get Started</b></h3>
+  </header>
+  <ul class="w3-ul">
+    <a routerLink= "/pyIntro"><li class="w3-light-grey w3-padding-16"><b>Introduction</b><span style="cursor:pointer;" class="w3-right w3-margin-right"></span></li></a>
+    <a routerLink = "/pyLoops"><li class="w3-padding-16"><b>Conditional Statements,Loops & Functions</b><span style="cursor:pointer;" class="w3-right w3-margin-right"></span></li></a>
+    <a routerLink = "/pyTopics"><li class="w3-light-grey w3-padding-16"><b>More Topics</b><span style="cursor:pointer;" class="w3-right w3-margin-right"></span></li></a>
+    <!-- <a routerLink = "/homepage"><li class="w3-padding-16"><b>Mock Interview</b><span style="cursor:pointer;" class="w3-right w3-margin-right"></span></li></a> -->
+  </ul>
+</div>
+<br>
+<form #discussionForm="ngForm" (ngSubmit)="addComment(discussionForm.value)">
+  &nbsp;&nbsp;<label><b>Comments:</b></label><br>
+  <!-- <input type="text" ngModel name="comment" #comment=ngModel placeholder="Add your Comment here" class="form-control"> -->
+  &nbsp;&nbsp;<textarea ngModel name="comment" #comment=ngModel placeholder="Add your Comment here" class="form-control" required minlength="10"></textarea><br>
+  &nbsp;&nbsp;&nbsp;<button type="submit" class="btn" >Add</button><br>
+</form>
+<br>
+&nbsp;&nbsp;<button (click)="showComments()" class="btn">Show Comments</button>
+<br><br>
+<div *ngFor="let com of all_comments">
+  &nbsp;&nbsp;<b>{{com.email}}</b>
+  &nbsp;&nbsp;<div class="container">
+    &nbsp;&nbsp; {{com.comment}}
+  </div>
+</div>
